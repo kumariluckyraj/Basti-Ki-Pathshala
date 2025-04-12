@@ -10,12 +10,7 @@ const Committees = () => {
           <h2>AgniMundal Committees</h2>
 
           <div className="committee">
-            <Image
-              src="" 
-              alt="General Assembly Committee" 
-              width={300} 
-              height={300}
-            />
+           
             <div className="committee-content">
   <h3>General Assembly (GA)</h3>
   <p>
@@ -39,8 +34,7 @@ const Committees = () => {
           </div>
 
           <div className="committee">
-            <Image src="" alt="Security Council"  width={300} 
-                    height={300} />
+           
             <div className="committee-content">
   <h3>General Assembly (GA)</h3>
   <p>
@@ -64,8 +58,7 @@ const Committees = () => {
           </div>
 
           <div className="committee">
-            <Image src="" alt="ECOSOC"  width={300} 
-                    height={300} />
+            
             <div className="committee-content">
   <h3>General Assembly (GA)</h3>
   <p>
@@ -89,8 +82,7 @@ const Committees = () => {
           </div>
 
           <div className="committee">
-            <Image src="" alt="UNHRC"  width={300} 
-                    height={300}/>
+           
             <div className="committee-content">
   <h3>General Assembly (GA)</h3>
   <p>
@@ -113,8 +105,7 @@ const Committees = () => {
           </div>
 
           <div className="committee">
-            <Image src="" alt="UNEP"  width={300} 
-                    height={300} />
+            
             <div className="committee-content">
   <h3>General Assembly (GA)</h3>
   <p>
@@ -138,8 +129,7 @@ const Committees = () => {
           </div>
 
           <div className="committee">
-            <Image src="" alt="DISEC"  width={300} 
-                    height={300} />
+            
             <div className="committee-content">
   <h3>General Assembly (GA)</h3>
   <p>

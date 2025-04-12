@@ -6,9 +6,9 @@ const nextConfig = {
         'images.unsplash.com',
         'media.istockphoto.com',
         'img.icons8.com',
-        'encrypted-tbn0.gstatic.com', // ✅ Add this
-      ],
-    },
+        'encrypted-tbn0.gstatic.com'
+      ]
+    }
   };
   
   export default nextConfig;

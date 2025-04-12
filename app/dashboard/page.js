@@ -1,21 +1,23 @@
 "use client";
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useCallback } from 'react';
 import { useSession } from "next-auth/react";
 import { useRouter } from 'next/navigation';
 import { fetchuser, updateProfile } from '@/actions/useractions';
 import './dasboard.css';
-import Image  from 'next/image';
+import Image from 'next/image';
+
 const Dashboard = () => {
   const { data: session, status, update } = useSession();
   const router = useRouter();
   const [form, setform] = useState({});
 
-  const getData = async () => {
+  // Use useCallback to avoid creating a new function on each render
+  const getData = useCallback(async () => {
     if (session?.user?.name) {
       const u = await fetchuser(session.user.name);
       setform(u);
     }
-  };
+  }, [session?.user?.name]);
 
   useEffect(() => {
     if (status === "unauthenticated") {
@@ -25,7 +27,7 @@ const Dashboard = () => {
     if (status === "authenticated" && session) {
       getData();
     }
-  }, [status, session]);
+  }, [status, session, getData, router]);
 
   if (status === "loading") {
     return <div className="text-center mt-10">Loading...</div>;
@@ -48,7 +50,7 @@ const Dashboard = () => {
     await updateProfile(data, session.user.name);
     alert("You have registered successfully!");
   };
-
+  
   return (
     <div>
       <div className='container mx-auto py-5 px-6 pt-20'>

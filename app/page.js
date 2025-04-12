@@ -41,14 +41,14 @@ export default function Home() {
     <div style={{ display: "flex", justifyContent: "center", flexWrap: "wrap", gap: "10px" ,color:"black"}}>
       <div style={{ textAlign: "center", borderRight: "1px solid #ccc", padding: "5px 10px" }}>
         <Image  width={300} 
-                    height={300} src="" alt="Company A Logo" className="hover-zoom" style={{ maxHeight: "100px" }} />
+                    height={300} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-kj4HZmgIyuvjL7BCOJxnY_Y4manlE3FR3Q&sg" alt="Company A Logo" className="hover-zoom" style={{ maxHeight: "100px" }} />
         <p>Company A</p>
       </div>
       <div style={{ textAlign: "center", borderRight: "1px solid #ccc", padding: "5px 10px" }}
 
       >
         <Image  width={300} 
-                    height={300} src="" alt="Company B Logo"className="hover-zoom" style={{ maxHeight: "100px" }}
+                    height={300} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-kj4HZmgIyuvjL7BCOJxnY_Y4manlE3FR3Q&sg" alt="Company B Logo"className="hover-zoom" style={{ maxHeight: "100px" }}
         />
         <p >Company B</p>
       </div>
@@ -56,14 +56,14 @@ export default function Home() {
 
       >
         <Image  width={300} 
-                    height={300} src="" className="hover-zoom" style={{ maxHeight: "100px" }}
+                    height={300} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-kj4HZmgIyuvjL7BCOJxnY_Y4manlE3FR3Q&sg" alt="company c" className="hover-zoom" style={{ maxHeight: "100px" }}
         />
         <p >Company C</p>
       </div>
       <div  style={{ textAlign: "center", borderRight: "1px solid #ccc", padding: "5px 10px" }}
  >
         <Image width={300} 
-                    height={300} src="" alt="Company D Logo" className="hover-zoom"  style={{ maxHeight: "100px" }}
+                    height={300} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-kj4HZmgIyuvjL7BCOJxnY_Y4manlE3FR3Q&sg" alt="Company D Logo" className="hover-zoom"  style={{ maxHeight: "100px" }}
         />
         <p >Company D</p>
       </div>
@@ -171,7 +171,7 @@ export default function Home() {
   <h3>🎉 Social Night</h3>
   <p><strong>Time:</strong> 10:00 PM – Midnight</p>
   <p>
-    After a day of intense diplomacy and debate, it's time to unwind and celebrate at our electrifying <strong>Social Night</strong>. This is where memories are made, friendships are forged, and the spirit of AgniMUN truly shines beyond the committee walls.
+    After a day of intense diplomacy and debate, its time to unwind and celebrate at our electrifying <strong>Social Night</strong>. This is where memories are made, friendships are forged, and the spirit of AgniMUN truly shines beyond the committee walls.
   </p>
   <ul style={{ textAlign: "left", paddingLeft: "1.5rem" }}>
     <li>🎶 Live DJ with a curated playlist to keep the energy high</li>
@@ -181,7 +181,7 @@ export default function Home() {
     <li>🎭 Theme-based dress code & mini games for social interaction</li>
   </ul>
   <p>
-    Whether you're celebrating a successful resolution or just want to relax and meet fellow delegates in a more casual setting, Social Night is your moment to shine. Come dressed to impress and get ready to dance the night away!
+    Whether youre celebrating a successful resolution or just want to relax and meet fellow delegates in a more casual setting, Social Night is your moment to shine. Come dressed to impress and get ready to dance the night away!
   </p>
   <p><strong>Note:</strong> Dress code: Smart Casual or Theme-Based (TBA)</p>
 </div>
@@ -201,7 +201,7 @@ export default function Home() {
     <li>🎤 Closing words from the Secretariat and Organizing Team</li>
   </ul>
   <p>
-    This ceremony isn't just about accolades — it's a celebration of the effort, courage, and diplomacy displayed by every participant. Whether you're taking home a trophy or priceless memories, you'll leave inspired, empowered, and connected.
+    This ceremony isnt just about accolades — its a celebration of the effort, courage, and diplomacy displayed by every participant. Whether youre taking home a trophy or priceless memories, youll leave inspired, empowered, and connected.
   </p>
   <p><strong>Tip:</strong> Stay till the end — the final group photo is one for the memories!</p>
 </div>
