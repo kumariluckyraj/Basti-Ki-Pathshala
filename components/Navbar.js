@@ -3,7 +3,7 @@
 import React, { useState } from 'react'
 import { useSession, signIn, signOut } from "next-auth/react"
 import Link from 'next/link'
-
+import Image from 'next/image'
 const Navbar = () => {
   const { data: session } = useSession()
   const [showDropdown, setShowDropdown] = useState(false)
@@ -12,7 +12,8 @@ const Navbar = () => {
     <nav className="flex justify-between items-center p-4 bg-black text-white">
       {/* Left Side */}
       <div className="flex items-center gap-2">
-        <img
+        <Image  width={300} 
+                    height={300}
           src="https://img.icons8.com/?size=96&id=QTEnylAkMAkP&format=png"
           alt="Agni Logo"
           className="w-10 h-10"
@@ -56,7 +57,7 @@ const Navbar = () => {
                   </li>
                   <li>
                     <button
-                      onClick={() => signOut()}
+                      onMouseDown={() => signOut()}
                       className="w-full text-left px-4 py-2 hover:bg-gray-100"
                     >
                       Sign out

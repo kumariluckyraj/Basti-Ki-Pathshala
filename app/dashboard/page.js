@@ -4,7 +4,7 @@ import { useSession } from "next-auth/react";
 import { useRouter } from 'next/navigation';
 import { fetchuser, updateProfile } from '@/actions/useractions';
 import './dasboard.css';
-
+import Image  from 'next/image';
 const Dashboard = () => {
   const { data: session, status, update } = useSession();
   const router = useRouter();
@@ -72,7 +72,7 @@ const Dashboard = () => {
 
           <div className="my-2">
             <label htmlFor="phone" className="block mb-2 text-sm font-medium">Phone Number</label>
-            <input type="tel" name="phone" id="phone" pattern="[0-9]{10}" maxLength={10} defaultValue={form.phone || ''} placeholder="Enter 10-digit phone number" className="block w-full p-2 rounded-lg text-xs" />
+            <input type="tel" name="phone" id="phone" pattern="[0-9]{10}" maxLength={10} defaultValue={form.phone || ''} placeholder="Enter 10-digit phone number" className="block w-full p-2 rounded-lg text-xs bg-slate-600" />
           </div>
 
           <div className="my-2">
@@ -127,16 +127,22 @@ const Dashboard = () => {
 
             <div className="logo-social-container">
               <div className="logo-img">
-                <img src="https://img.icons8.com/?size=96&id=QTEnylAkMAkP&format=png" alt="logo" />
+                <Image  width={300} 
+                    height={300} src="https://img.icons8.com/?size=96&id=QTEnylAkMAkP&format=png" alt="logo" />
               </div>
 
               <section id="social-links">
                 <div>
-                  <a href="YOUR_GITHUB_LINK"><img src="https://img.icons8.com/?size=96&id=AZOZNnY73haj&format=png" alt="GitHub" /></a>
-                  <a href="YOUR_YOUTUBE_LINK"><img src="https://img.icons8.com/?size=96&id=13983&format=png" alt="YouTube" /></a>
-                  <a href="YOUR_INSTAGRAM_LINK"><img src="https://img.icons8.com/?size=160&id=BrU2BBoRXiWq&format=png" alt="Instagram" /></a>
-                  <a href="YOUR_LINKEDIN_LINK"><img src="https://img.icons8.com/?size=96&id=13930&format=png" alt="LinkedIn" /></a>
-                  <a href="YOUR_FACEBOOK_LINK"><img src="https://img.icons8.com/?size=96&id=118497&format=png" alt="Facebook" /></a>
+                  <a href="YOUR_GITHUB_LINK"><Image  width={300} 
+                    height={300} src="https://img.icons8.com/?size=96&id=AZOZNnY73haj&format=png" alt="GitHub" /></a>
+                  <a href="YOUR_YOUTUBE_LINK"><Image  width={300} 
+                    height={300} src="https://img.icons8.com/?size=96&id=13983&format=png" alt="YouTube" /></a>
+                  <a href="YOUR_INSTAGRAM_LINK"><Image  width={300} 
+                    height={300} src="https://img.icons8.com/?size=160&id=BrU2BBoRXiWq&format=png" alt="Instagram" /></a>
+                  <a href="YOUR_LINKEDIN_LINK"><Image  width={300} 
+                    height={300} src="https://img.icons8.com/?size=96&id=13930&format=png" alt="LinkedIn" /></a>
+                  <a href="YOUR_FACEBOOK_LINK"><Image  width={300} 
+                    height={300} src="https://img.icons8.com/?size=96&id=118497&format=png" alt="Facebook" /></a>
                 </div>
                 <p>&copy; 2025 AgniMundal</p>
               </section>

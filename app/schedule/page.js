@@ -1,6 +1,6 @@
 
 import './Schedule.css';
-
+import Image from 'next/image';
 
 const Schedule = () => {
   return (
@@ -129,7 +129,8 @@ const Schedule = () => {
 
       <div className="logo-social-container">
         <div className="logo-img">
-          <img
+          <Image  width={300} 
+                    height={300}
             src="https://img.icons8.com/?size=96&id=QTEnylAkMAkP&format=png"
             alt="logo"
             className=""
@@ -143,7 +144,8 @@ const Schedule = () => {
         >
           <div>
             <a href="YOUR_GITHUB_LINK" target="_blank" rel="noopener noreferrer">
-              <img
+              <Image  width={300} 
+                    height={300}
                 src="https://img.icons8.com/?size=96&id=AZOZNnY73haj&format=png"
                 alt="GitHub Logo"
                 className=""
@@ -151,7 +153,8 @@ const Schedule = () => {
               />
             </a>
             <a href="YOUR_YOUTUBE_LINK" target="_blank" rel="noopener noreferrer">
-              <img
+              <Image  width={300} 
+                    height={300}
                 src="https://img.icons8.com/?size=96&id=13983&format=png"
                 alt="YouTube Logo"
                 className=""
@@ -159,7 +162,8 @@ const Schedule = () => {
               />
             </a>
             <a href="YOUR_INSTAGRAM_LINK" target="_blank" rel="noopener noreferrer">
-              <img
+              <Image  width={300} 
+                    height={300}
                 src="https://img.icons8.com/?size=160&id=BrU2BBoRXiWq&format=png"
                 alt="Instagram Logo"
                 className=""
@@ -167,7 +171,8 @@ const Schedule = () => {
               />
             </a>
             <a href="YOUR_LINKEDIN_LINK" target="_blank" rel="noopener noreferrer">
-              <img
+              <Image  width={300} 
+                    height={300}
                 src="https://img.icons8.com/?size=96&id=13930&format=png"
                 alt="LinkedIn Logo"
                 className=""
@@ -175,7 +180,8 @@ const Schedule = () => {
               />
             </a>
             <a href="YOUR_FACEBOOK_LINK" target="_blank" rel="noopener noreferrer">
-              <img
+              <Image  width={300} 
+                    height={300}
                 src="https://img.icons8.com/?size=96&id=118497&format=png"
                 alt="Facebook Logo"
                 className=""

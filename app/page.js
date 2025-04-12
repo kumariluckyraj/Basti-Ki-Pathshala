@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import './home.css';
+import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -39,50 +40,58 @@ export default function Home() {
     
     <div style={{ display: "flex", justifyContent: "center", flexWrap: "wrap", gap: "10px" ,color:"black"}}>
       <div style={{ textAlign: "center", borderRight: "1px solid #ccc", padding: "5px 10px" }}>
-        <img src="" alt="Company A Logo" className="hover-zoom" style={{ maxHeight: "100px" }} />
+        <Image  width={300} 
+                    height={300} src="" alt="Company A Logo" className="hover-zoom" style={{ maxHeight: "100px" }} />
         <p>Company A</p>
       </div>
       <div style={{ textAlign: "center", borderRight: "1px solid #ccc", padding: "5px 10px" }}
 
       >
-        <img src="" alt="Company B Logo"className="hover-zoom" style={{ maxHeight: "100px" }}
+        <Image  width={300} 
+                    height={300} src="" alt="Company B Logo"className="hover-zoom" style={{ maxHeight: "100px" }}
         />
         <p >Company B</p>
       </div>
       <div style={{ textAlign: "center", borderRight: "1px solid #ccc", padding: "5px 10px" }}
 
       >
-        <img src="" className="hover-zoom" style={{ maxHeight: "100px" }}
+        <Image  width={300} 
+                    height={300} src="" className="hover-zoom" style={{ maxHeight: "100px" }}
         />
         <p >Company C</p>
       </div>
       <div  style={{ textAlign: "center", borderRight: "1px solid #ccc", padding: "5px 10px" }}
  >
-        <img src="" alt="Company D Logo" className="hover-zoom"  style={{ maxHeight: "100px" }}
+        <Image width={300} 
+                    height={300} src="" alt="Company D Logo" className="hover-zoom"  style={{ maxHeight: "100px" }}
         />
         <p >Company D</p>
       </div>
       <div style={{ textAlign: "center", borderRight: "1px solid #ccc", padding: "5px 10px" }}
  >
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-kj4HZmgIyuvjL7BCOJxnY_Y4manlE3FR3Q&sg" alt="Company E Logo" className="hover-zoom" style={{ maxHeight: "100px" }}
+        <Image  width={300} 
+                    height={300} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-kj4HZmgIyuvjL7BCOJxnY_Y4manlE3FR3Q&sg" alt="Company E Logo" className="hover-zoom" style={{ maxHeight: "100px" }}
  />
         <p >Company E</p>
       </div>
       <div style={{ textAlign: "center", borderRight: "1px solid #ccc", padding: "5px 10px" }}
  >
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-1K4zFXxhNi5znq1KTkBtRkl7eJSGc04cgA&s" alt="Company F Logo" className="hover-zoom" style={{ maxHeight: "100px" }}
+        <Image  width={300} 
+                    height={300} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-1K4zFXxhNi5znq1KTkBtRkl7eJSGc04cgA&s" alt="Company F Logo" className="hover-zoom" style={{ maxHeight: "100px" }}
  />
         <p >Company F</p>
       </div>
       <div style={{ textAlign: "center", borderRight: "1px solid #ccc", padding: "5px 10px" }}
       >
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrauc-xnN1L1GsAnmX3Zwftvyxm87BwnV9cQ&s" alt="Company G Logo" className="hover-zoom" style={{ maxHeight: "100px" }}
+        <Image  width={300} 
+                    height={300} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrauc-xnN1L1GsAnmX3Zwftvyxm87BwnV9cQ&s" alt="Company G Logo" className="hover-zoom" style={{ maxHeight: "100px" }}
  />
         <p >Company G</p>
       </div>
       <div style={{ textAlign: "center", borderRight: "1px solid #ccc", padding: "5px 10px" }}
       >
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6Xc5IcSCxAxrhvb2o9Z0Y6OluzJdXu-t8PA&s" alt="Company H Logo" className="hover-zoom" style={{ maxHeight: "100px" }}
+        <Image  width={300} 
+                    height={300} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6Xc5IcSCxAxrhvb2o9Z0Y6OluzJdXu-t8PA&s" alt="Company H Logo" className="hover-zoom" style={{ maxHeight: "100px" }}
         />
         
         <p >Company H</p>
@@ -270,22 +279,28 @@ export default function Home() {
     <div className="gallery-container">
       <div className="gallery-row">
         <div className="gallery-item">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNGxP-UdhDgtr-DrjkmQZ9DgU9Q0MwwJCp2Q&s" alt="Gallery Image 9" className="hover-zoom" />
+          <Image  width={300} 
+                    height={300} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNGxP-UdhDgtr-DrjkmQZ9DgU9Q0MwwJCp2Q&s" alt="Gallery Image 9" className="hover-zoom" />
         </div>
         <div className="gallery-item">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo45l9nopncpKPX69MKBuJk9-KCDZbj80hLw&s" alt="Gallery Image 10" className="hover-zoom" />
+          <Image  width={300} 
+                    height={300} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo45l9nopncpKPX69MKBuJk9-KCDZbj80hLw&s" alt="Gallery Image 10" className="hover-zoom" />
         </div>
         <div className="gallery-item">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5AxQEBeqHTfsEIGR0j44O6roh18xSwK25Tw&s" alt="Gallery Image 12" className="hover-zoom" />
+          <Image  width={300} 
+                    height={300} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5AxQEBeqHTfsEIGR0j44O6roh18xSwK25Tw&s" alt="Gallery Image 12" className="hover-zoom" />
         </div>
         <div className="gallery-item">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5AxQEBeqHTfsEIGR0j44O6roh18xSwK25Tw&s" alt="Gallery Image 12" className="hover-zoom" />
+          <Image  width={300} 
+                    height={300} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5AxQEBeqHTfsEIGR0j44O6roh18xSwK25Tw&s" alt="Gallery Image 12" className="hover-zoom" />
         </div>
         <div className="gallery-item">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5AxQEBeqHTfsEIGR0j44O6roh18xSwK25Tw&s" alt="Gallery Image 12" className="hover-zoom" />
+          <Image  width={300} 
+                    height={300} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5AxQEBeqHTfsEIGR0j44O6roh18xSwK25Tw&s" alt="Gallery Image 12" className="hover-zoom" />
         </div>
         <div className="gallery-item">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5AxQEBeqHTfsEIGR0j44O6roh18xSwK25Tw&s" alt="Gallery Image 12" className="hover-zoom" />
+          <Image  width={300} 
+                    height={300} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5AxQEBeqHTfsEIGR0j44O6roh18xSwK25Tw&s" alt="Gallery Image 12" className="hover-zoom" />
         </div>
       </div>
     </div>
@@ -330,7 +345,8 @@ export default function Home() {
 
       <div className="logo-social-container">
         <div className="logo-img">
-          <img
+          <Image  width={300} 
+                    height={300}
             src="https://img.icons8.com/?size=96&id=QTEnylAkMAkP&format=png"
             alt="logo"
             className=""
@@ -344,7 +360,8 @@ export default function Home() {
         >
           <div>
             <a href="YOUR_GITHUB_LINK" target="_blank" rel="noopener noreferrer">
-              <img
+              <Image  width={300} 
+                    height={300}
                 src="https://img.icons8.com/?size=96&id=AZOZNnY73haj&format=png"
                 alt="GitHub Logo"
                 className=""
@@ -352,7 +369,8 @@ export default function Home() {
               />
             </a>
             <a href="YOUR_YOUTUBE_LINK" target="_blank" rel="noopener noreferrer">
-              <img
+              <Image  width={300} 
+                    height={300}
                 src="https://img.icons8.com/?size=96&id=13983&format=png"
                 alt="YouTube Logo"
                 className=""
@@ -360,7 +378,8 @@ export default function Home() {
               />
             </a>
             <a href="YOUR_INSTAGRAM_LINK" target="_blank" rel="noopener noreferrer">
-              <img
+              <Image  width={300} 
+                    height={300}
                 src="https://img.icons8.com/?size=160&id=BrU2BBoRXiWq&format=png"
                 alt="Instagram Logo"
                 className=""
@@ -368,7 +387,8 @@ export default function Home() {
               />
             </a>
             <a href="YOUR_LINKEDIN_LINK" target="_blank" rel="noopener noreferrer">
-              <img
+              <Image  width={300} 
+                    height={300}
                 src="https://img.icons8.com/?size=96&id=13930&format=png"
                 alt="LinkedIn Logo"
                 className=""
@@ -376,7 +396,8 @@ export default function Home() {
               />
             </a>
             <a href="YOUR_FACEBOOK_LINK" target="_blank" rel="noopener noreferrer">
-              <img
+              <Image  width={300} 
+                    height={300}
                 src="https://img.icons8.com/?size=96&id=118497&format=png"
                 alt="Facebook Logo"
                 className=""

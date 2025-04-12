@@ -1,5 +1,5 @@
 import './committees.css';
-
+import Image from 'next/image';
 const Committees = () => {
   return (
     <>
@@ -10,9 +10,11 @@ const Committees = () => {
           <h2>AgniMundal Committees</h2>
 
           <div className="committee">
-            <img 
+            <Image
               src="" 
               alt="General Assembly Committee" 
+              width={300} 
+              height={300}
             />
             <div className="committee-content">
   <h3>General Assembly (GA)</h3>
@@ -37,7 +39,8 @@ const Committees = () => {
           </div>
 
           <div className="committee">
-            <img src="" alt="Security Council" />
+            <Image src="" alt="Security Council"  width={300} 
+                    height={300} />
             <div className="committee-content">
   <h3>General Assembly (GA)</h3>
   <p>
@@ -61,7 +64,8 @@ const Committees = () => {
           </div>
 
           <div className="committee">
-            <img src="" alt="ECOSOC" />
+            <Image src="" alt="ECOSOC"  width={300} 
+                    height={300} />
             <div className="committee-content">
   <h3>General Assembly (GA)</h3>
   <p>
@@ -85,7 +89,8 @@ const Committees = () => {
           </div>
 
           <div className="committee">
-            <img src="" alt="UNHRC" />
+            <Image src="" alt="UNHRC"  width={300} 
+                    height={300}/>
             <div className="committee-content">
   <h3>General Assembly (GA)</h3>
   <p>
@@ -108,7 +113,8 @@ const Committees = () => {
           </div>
 
           <div className="committee">
-            <img src="" alt="UNEP" />
+            <Image src="" alt="UNEP"  width={300} 
+                    height={300} />
             <div className="committee-content">
   <h3>General Assembly (GA)</h3>
   <p>
@@ -132,7 +138,8 @@ const Committees = () => {
           </div>
 
           <div className="committee">
-            <img src="" alt="DISEC" />
+            <Image src="" alt="DISEC"  width={300} 
+                    height={300} />
             <div className="committee-content">
   <h3>General Assembly (GA)</h3>
   <p>
@@ -183,42 +190,54 @@ const Committees = () => {
 
             <div className="logo-social-container">
               <div className="logo-img">
-                <img
+                <Image
                   src="https://img.icons8.com/?size=96&id=QTEnylAkMAkP&format=png"
                   alt="logo"
+                  width={300} 
+                  height={300}
                 />
               </div>
 
               <section id="social-links">
                 <div>
                   <a href="YOUR_GITHUB_LINK" target="_blank" rel="noopener noreferrer">
-                    <img
+                    <Image
                       src="https://img.icons8.com/?size=96&id=AZOZNnY73haj&format=png"
                       alt="GitHub Logo"
+                      width={300} 
+                      height={300}
                     />
                   </a>
                   <a href="YOUR_YOUTUBE_LINK" target="_blank" rel="noopener noreferrer">
-                    <img
+                    <Image
                       src="https://img.icons8.com/?size=96&id=13983&format=png"
                       alt="YouTube Logo"
+                      width={300} 
+                      height={300}
                     />
                   </a>
                   <a href="YOUR_INSTAGRAM_LINK" target="_blank" rel="noopener noreferrer">
-                    <img
+                    <Image
                       src="https://img.icons8.com/?size=160&id=BrU2BBoRXiWq&format=png"
                       alt="Instagram Logo"
+                      width={300} 
+                      height={300}
                     />
                   </a>
                   <a href="YOUR_LINKEDIN_LINK" target="_blank" rel="noopener noreferrer">
-                    <img
+                    <Image
                       src="https://img.icons8.com/?size=96&id=13930&format=png"
                       alt="LinkedIn Logo"
+                      width={300} 
+                      height={300}
                     />
                   </a>
                   <a href="YOUR_FACEBOOK_LINK" target="_blank" rel="noopener noreferrer">
-                    <img
+                    <Image
                       src="https://img.icons8.com/?size=96&id=118497&format=png"
                       alt="Facebook Logo"
+                      width={300} 
+                      height={300}
                     />
                   </a>
                 </div>
