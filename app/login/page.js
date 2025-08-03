@@ -1,19 +1,37 @@
 "use client"
 
-import React,{useEffect} from 'react'
+import React,{useEffect,useState} from 'react'
 import { useSession, signIn } from "next-auth/react"
 import {useRouter} from 'next/navigation'
 import './login.css';
-import Image from 'next/image';
+
+
+
+
+import Image from "next/image";
+
 const Login = () => {
-  const{data:session}= useSession()
-  const router = useRouter()
-  useEffect(()=>{
-  if(session) {
-      
-       router.push('/dashboard')
-      }
-    },[session,router])
+  const { data: session } = useSession();
+  const router = useRouter();
+
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [adminError, setAdminError] = useState("");
+  useEffect(() => {
+    if (session) {
+      router.push("/register");
+    }
+  }, [session, router]);
+
+  const handleAdminLogin = () => {
+  if (email === "admin@gmail.com" && password === "admin") {
+    router.push("/admin"); // ⬅ this path uses app/admin/layout.js
+  } else {
+    setAdminError("Invalid credentials. Only admin can log in here.");
+  }
+};
+
+
   return (
     <div className='text-white py-14 container mx-auto pt-48'>
       <h1 className='text-center font-bold text-3xl'>Login to Get Started</h1>
@@ -150,107 +168,31 @@ const Login = () => {
 
 
       </div>
-      <div className="sec6">
-  <section
-    id="contact"
-    className="content"
-   
+      
+     <div className="flex flex-col items-center mt-5">
+  <input
+    type="text"
+    placeholder="Admin Email"
+    value={email}
+    onChange={(e) => setEmail(e.target.value)}
+    className="mb-2 px-4 py-2 border rounded-md text-black"
+  />
+  <input
+    type="password"
+    placeholder="Admin Password"
+    value={password}
+    onChange={(e) => setPassword(e.target.value)}
+    className="mb-2 px-4 py-2 border rounded-md text-black"
+  />
+  <button
+    onClick={handleAdminLogin}
+    className="bg-white text-black px-4 py-2 rounded-md hover:bg-gray-300"
   >
-    <h2 >Contact</h2>
-    <p>Email: contact@mun.com</p>
-    <p>Phone: 123-456-7890</p>
-  </section>
-
-  <footer className="foot">
-    <div id="last">
-      <section id="quick-links">
-        <ul>
-          <h2>Quick Links</h2>
-          <li><a href="Home.html">Home</a></li>
-          <li><a href="partners.html">Partners</a></li>
-          <li><a href="programs.html">Programs</a></li>
-          <li><a href="Affiliate.html">Affiliate</a></li>
-          <li><a href="Volunteer.html">Volunteer</a></li>
-          <li><a href="Team.html">The Team</a></li>
-          <li><a href="privacy-policy.html">Privacy Policy</a></li>
-          <li><a href="Refund-policy.html">Refund Policy</a></li>
-          <li><a href="Contact.html">Contact Us</a></li>
-        </ul>
-      </section>
-
-      <div className="logo-social-container">
-        <div className="logo-img">
-          <Image  width={300} 
-                    height={300}
-            src="https://img.icons8.com/?size=96&id=QTEnylAkMAkP&format=png"
-            alt="logo"
-            className=""
-           
-          />
-        </div>
-
-        <section
-          id="social-links"
-         
-        >
-          <div>
-            <a href="YOUR_GITHUB_LINK" target="_blank" rel="noopener noreferrer">
-              <Image
-               width={300} 
-               height={300}
-                src="https://img.icons8.com/?size=96&id=AZOZNnY73haj&format=png"
-                alt="GitHub Logo"
-                className=""
-               
-              />
-            </a>
-            <a href="YOUR_YOUTUBE_LINK" target="_blank" rel="noopener noreferrer">
-              <Image
-               width={300} 
-               height={300}
-                src="https://img.icons8.com/?size=96&id=13983&format=png"
-                alt="YouTube Logo"
-                className=""
-               
-              />
-            </a>
-            <a href="YOUR_INSTAGRAM_LINK" target="_blank" rel="noopener noreferrer">
-              <Image
-               width={300} 
-               height={300}
-                src="https://img.icons8.com/?size=160&id=BrU2BBoRXiWq&format=png"
-                alt="Instagram Logo"
-                className=""
-                
-              />
-            </a>
-            <a href="YOUR_LINKEDIN_LINK" target="_blank" rel="noopener noreferrer">
-              <Image
-               width={300} 
-               height={300}
-                src="https://img.icons8.com/?size=96&id=13930&format=png"
-                alt="LinkedIn Logo"
-                className=""
-                
-              />
-            </a>
-            <a href="YOUR_FACEBOOK_LINK" target="_blank" rel="noopener noreferrer">
-              <Image
-               width={300} 
-               height={300}
-                src="https://img.icons8.com/?size=96&id=118497&format=png"
-                alt="Facebook Logo"
-                className=""
-              
-              />
-            </a>
-          </div>
-          <p >&copy; 2025 AgniMundal</p>
-        </section>
-      </div>
-    </div>
-  </footer>
+    Login as Admin
+  </button>
+  {adminError && <p className="text-red-500 mt-2">{adminError}</p>}
 </div>
+
 
     </div>
   
