@@ -129,7 +129,7 @@ const Login = () => {
   >
     Login as Admin
   </button>
-  <div>Emaid id is <span className='text-bold'> admin@gmail.com</span> <hr/><span className='text-bold'>Password is admin</span> </div>
+  <div className='text-black '>Emaid id is <span className='font-bold'> admin@gmail.com</span> <hr/>Password is<span className='font-bold'> admin</span> </div>
   {adminError && <p className="text-red-500 mt-2">{adminError}</p>}
 </div>
 
