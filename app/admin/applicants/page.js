@@ -37,7 +37,7 @@ const AdminApplicantsPage = () => {
       ) : (
         <table className="w-full border-collapse border border-gray-200">
           <thead>
-            <tr className="bg-gray-100">
+            <tr className="bg-black-100">
               <th className="p-2 border">Name</th>
               <th className="p-2 border">Email</th>
               <th className="p-2 border">Phone</th>

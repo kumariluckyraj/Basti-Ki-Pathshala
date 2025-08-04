@@ -9,27 +9,25 @@ const Navbar = () => {
   const [showDropdown, setShowDropdown] = useState(false)
 
   return (
-    <nav className="flex justify-between items-center p-4 bg-black text-white">
+    <nav className="flex justify-between items-center p-4 sticky top-0 z-50 bg-cover bg-center bg-no-repeat  "
+    style={{
+    backgroundImage: "url('/brownbg.jpg')",
+  }}
+     >
       {/* Left Side */}
       <div className="flex items-center gap-2">
-        <Image  width={300} 
-                    height={300}
-          src="https://img.icons8.com/?size=96&id=QTEnylAkMAkP&format=png"
-          alt="Agni Logo"
-          className="w-10 h-10"
-        />
-        <span className="font-bold text-xl">AgniMundal</span>
+        
+        <span className="font-bold pl-4 text-xl">Basti Ki Pathshala</span>
       </div>
 
       {/* Center Links */}
       <ul className="flex gap-6 items-center">
-        <Link className="hover:text-orange-500" href="/">Home</Link>
-        <Link className="hover:text-orange-500" href="/about">About</Link>
-        <Link className="hover:text-orange-500" href="/committees">Committees</Link>
-        <Link className="hover:text-orange-500" href="/schedule">Schedule</Link>
-        <Link className="hover:text-orange-500" href="/login">Registration</Link>
-        <Link className="hover:text-orange-500" href="/login">Login</Link>
-        <li className="hover:text-orange-500"><a href="#contact">Contact</a></li>
+        <Link className="hover:text-amber-900" href="/">Home</Link>
+        <Link className="hover:text-amber-900" href="/about">About</Link>
+       
+        <Link className="hover:text-amber-900" href="/login">Registration</Link>
+        <Link className="hover:text-amber-900" href="/login">Login</Link>
+        <li className="hover:text-amber-900"><a href="#footer">Contact</a></li>
       </ul>
 
       {/* Right Side: Auth Actions */}
@@ -49,10 +47,10 @@ const Navbar = () => {
                 <ul className="py-2">
                   <li>
                     <Link
-                      href="/dashboard"
+                      href="/register"
                       className="block px-4 py-2 hover:bg-gray-100"
                     >
-                      Dashboard
+                      Register
                     </Link>
                   </li>
                   <li>
@@ -69,7 +67,7 @@ const Navbar = () => {
           </>
         ) : (
           <Link href="/login">
-            <button className="bg-orange-500 px-4 py-2 rounded-lg hover:bg-orange-600">Login</button>
+            <button className="bg-yelow-500 px-8 py-2 text-black rounded-lg bg-white hover:bg-amber-900 hover:text-white">Login</button>
           </Link>
         )}
       </div>

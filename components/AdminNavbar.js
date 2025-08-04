@@ -16,10 +16,8 @@ export default function AdminNavbar() {
       <ul className="flex gap-6 items-center">
         <Link className="hover:text-orange-500" href="/">Home</Link>
         <Link className="hover:text-orange-500" href="/about">About</Link>
-        <Link className="hover:text-orange-500" href="/committees">Committees</Link>
-        <Link className="hover:text-orange-500" href="/schedule">Schedule</Link>
-        <Link className="hover:text-orange-500" href="/login">Registration</Link>
-        <Link className="hover:text-orange-500" href="/login">Login</Link>
+       
+        
         <li className="hover:text-orange-500"><a href="#contact">Contact</a></li>
       </ul>
 </nav>
