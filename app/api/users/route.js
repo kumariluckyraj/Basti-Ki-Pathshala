@@ -1,23 +1,26 @@
-
-import connectDb from "@/db/connectDb" // adjust the path if needed
-import Register from "@/models/Registration"; // your Mongoose model
-import { NextResponse } from "next/server";
-import mongoose from "mongoose";
-
 export async function GET(req) {
   try {
     await connectDb();
-console.log("🔌 Connected to DB:", mongoose.connection.host);
-
     const users = await Register.find({});
-    console.log("Fetched users:", users);
 
-    return NextResponse.json({ success: true, users });
+    return new NextResponse(JSON.stringify({ success: true, users }), {
+      status: 200,
+      headers: {
+        "Content-Type": "application/json",
+        "Cache-Control": "no-store", // 👈 Prevent caching
+      },
+    });
   } catch (error) {
     console.error("❌ Error fetching users:", error);
-    return NextResponse.json(
-      { success: false, message: "Server Error" },
-      { status: 500 }
+    return new NextResponse(
+      JSON.stringify({ success: false, message: "Server Error" }),
+      {
+        status: 500,
+        headers: {
+          "Content-Type": "application/json",
+          "Cache-Control": "no-store", // 👈 Apply here too
+        },
+      }
     );
   }
 }
