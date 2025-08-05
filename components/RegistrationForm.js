@@ -18,13 +18,28 @@ export default function RegistrationForm() {
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+const handleSubmit = async (e) => {
+  e.preventDefault();
+  setError(null);
 
-    if (!formData.fullName || !formData.email || !formData.phone || !formData.motivation) {
-      setError("Please fill out all fields.");
-      return;
-    }
+  // Basic validations
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  const phoneRegex = /^\d{10}$/;
+
+  if (!formData.fullName || !formData.email || !formData.phone || !formData.motivation) {
+    setError("Please fill out all fields.");
+    return;
+  }
+
+  if (!emailRegex.test(formData.email)) {
+    setError("Please enter a valid email address.");
+    return;
+  }
+
+  if (!phoneRegex.test(formData.phone)) {
+    setError("Phone number must be exactly 10 digits.");
+    return;
+  }
 
     try {
       const res = await fetch("/api/register", {
