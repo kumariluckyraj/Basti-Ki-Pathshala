@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';//
 
 const AdminApplicantsPage = () => {
   const [applicants, setApplicants] = useState([]);
