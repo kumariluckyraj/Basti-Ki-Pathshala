@@ -40,7 +40,7 @@ const Login = () => {
   }}>
      
 
-      <div className="flex flex-col gap-2 min-h-screen items-center  p-10">
+      <div className="flex flex-col gap-2 min-h-screen items-center   p-10">
      
  <div className='flex content-center items-center text-xl text-center text-amber-900 font-bold'>Login as Intern/Volunteer to Register</div>
         <button  onClick={()=>(signIn("google"))}

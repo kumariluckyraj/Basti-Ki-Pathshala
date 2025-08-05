@@ -20,7 +20,7 @@ export default function Home() {
               Become a Volunteer
             </span>
           </Link>
-          <Link href="/login">
+          <Link href="/loginadmin">
             <span className="bg-amber-900 text-white px-4 py-2 rounded hover:bg-amber-800 cursor-pointer">
               Admin View
             </span>
