@@ -5,6 +5,7 @@ import { NextResponse } from "next/server";
 export async function GET(req) {
   try {
     await connectDB();
+console.log("Connected to DB:", process.env.MONGODB_URI);
 
     const users = await Register.find({});
     return NextResponse.json({ success: true, users });
