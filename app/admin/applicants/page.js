@@ -9,7 +9,8 @@ const AdminApplicantsPage = () => {
   useEffect(() => {
     const fetchApplicants = async () => {
       try {
-        const res = await fetch('https://basti-ki-pathshala-rouge.vercel.app/api/users');
+        const res = await fetch('/api/users?' + Date.now());
+
 
 
 
