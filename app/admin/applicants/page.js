@@ -9,8 +9,11 @@ const AdminApplicantsPage = () => {
   useEffect(() => {
     const fetchApplicants = async () => {
       try {
-        const res = await fetch('/api/users');
+        const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/users`);
+
+
         const data = await res.json();
+        console.log("Fetched data:", data);
         if (data.success) {
           setApplicants(data.users);
         } else {
