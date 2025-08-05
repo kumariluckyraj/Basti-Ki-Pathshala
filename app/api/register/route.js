@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
-import { connectDB } from "@/lib/mongoose"; // We'll set this up in step 2
+
+import connectDb from "@/db/connectDb" // We'll set this up in step 2
 import Registration from "@/models/Registration"; // Set up this model in step 3
 
 export async function POST(req) {
@@ -11,7 +12,7 @@ export async function POST(req) {
       return NextResponse.json({ message: "Missing required fields" }, { status: 400 });
     }
 
-    await connectDB();
+    await connectDb();
 
     const newEntry = await Registration.create({ fullName, email, phone, role, motivation });
 

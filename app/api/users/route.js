@@ -1,10 +1,11 @@
-import { connectDB } from "@/lib/mongoose"; // adjust the path if needed
+
+import connectDb from "@/db/connectDb" // adjust the path if needed
 import Register from "@/models/Registration"; // your Mongoose model
 import { NextResponse } from "next/server";
 
 export async function GET(req) {
   try {
-    await connectDB();
+    await connectDb();
 console.log("Connected to DB:", process.env.MONGODB_URI);
 
     const users = await Register.find({});
