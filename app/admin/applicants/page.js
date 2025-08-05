@@ -9,7 +9,10 @@ const AdminApplicantsPage = () => {
   useEffect(() => {
     const fetchApplicants = async () => {
       try {
-        const res = await fetch('/api/users?' + Date.now());
+       const res = await fetch('/api/users?' + Date.now(), {
+  cache: 'no-store'
+});
+
 
 
 

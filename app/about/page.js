@@ -1,3 +1,4 @@
+"use client"
 export default function AboutPage() {
   return (
     <main className="min-h-screen  text-gray-800 px-60 py-12 bg-cover bg-center bg-no-repeat "

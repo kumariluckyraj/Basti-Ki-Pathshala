@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 
 import connectDb from "@/db/connectDb" // We'll set this up in step 2
 import Registration from "@/models/Registration"; // Set up this model in step 3
+import mongoose from "mongoose"; 
 
 export async function POST(req) {
   try {
@@ -13,6 +14,7 @@ export async function POST(req) {
     }
 
     await connectDb();
+console.log("🔌 Connected to DB:", mongoose.connection.host);
 
     const newEntry = await Registration.create({ fullName, email, phone, role, motivation });
 
