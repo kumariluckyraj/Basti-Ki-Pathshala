@@ -3,7 +3,7 @@ import connectDb from "@/db/connectDb";
 import Register from "@/models/Registration";
 import mongoose from "mongoose";
 
-export const dynamic = "force-dynamic"; // ✅ tells Vercel this route is dynamic
+export const dynamic = "force-dynamic"; 
 
 export async function GET(req) {
   try {
@@ -15,7 +15,7 @@ export async function GET(req) {
       status: 200,
       headers: {
         "Content-Type": "application/json",
-        "Cache-Control": "no-store", // ✅ disables caching
+        "Cache-Control": "no-store", 
       },
     });
   } catch (error) {

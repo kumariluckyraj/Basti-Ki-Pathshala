@@ -4,7 +4,7 @@ import Link from 'next/link';
 export default function Home() {
   return (
     <main className="font-sans  min-h-screen bg-white text-gray-800">
-      {/* Hero */}
+    
       
       <section
   className="bg-cover bg-center bg-no-repeat py-16 text-center text-wblack"
@@ -28,7 +28,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* About */}
       <section className="py-12 px-18  content-center   mx-auto text-center bg-cover bg-center bg-no-repeat"
        style={{
     backgroundImage: "url('/whitebg.jpg')",
@@ -44,7 +43,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Impact Section */}
       <section className="py-12 bg-gray-100 px-6  bg-cover bg-center bg-no-repeat"
      style={{
     backgroundImage: "url('/brownbg.jpg')",
@@ -64,7 +62,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Join CTA */}
+    
       <section className="py-12 text-center">
         <h2 className="text-2xl font-semibold mb-4">Want to Make a Difference?</h2>
         <Link href="/login">
@@ -74,7 +72,7 @@ export default function Home() {
         </Link>
       </section>
 
-      {/* Footer */}
+     
       
     </main>
   );

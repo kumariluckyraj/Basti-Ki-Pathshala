@@ -14,13 +14,13 @@ const Navbar = () => {
     backgroundImage: "url('/brownbg.jpg')",
   }}
      >
-      {/* Left Side */}
+      
       <div className="flex items-center gap-2">
         
         <span className="font-bold pl-4 text-xl">Basti Ki Pathshala</span>
       </div>
 
-      {/* Center Links */}
+   
       <ul className="flex gap-6 items-center">
         <Link className="hover:text-amber-900" href="/">Home</Link>
         <Link className="hover:text-amber-900" href="/about">About</Link>
@@ -30,7 +30,7 @@ const Navbar = () => {
         <li className="hover:text-amber-900"><a href="#footer">Contact</a></li>
       </ul>
 
-      {/* Right Side: Auth Actions */}
+      
       <div className="relative">
         {session ? (
           <>

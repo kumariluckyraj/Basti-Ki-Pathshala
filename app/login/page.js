@@ -25,7 +25,7 @@ const Login = () => {
 
   const handleAdminLogin = () => {
   if (email === "admin@gmail.com" && password === "admin") {
-    router.push("/admin/applicants"); // ⬅ this path uses app/admin/layout.js
+    router.push("/admin/applicants"); 
   } else {
     setAdminError("Invalid credentials. Only admin can log in here.");
   }
